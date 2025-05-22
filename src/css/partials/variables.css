@@ -66,6 +66,12 @@
     --bs-black-rgb: 0, 0, 0;
     --bs-body-color-rgb: 33, 37, 41;
     --bs-body-bg-rgb: 255, 255, 255;
+
+    /* Alert colors */
+    --alert-closure: #cb2027;
+    --alert-caution: #ed7e31;
+    --alert-information: #2451a9;
+    --alert-danger: #720f04;
 }
 
 /* --------------------------------------------------
