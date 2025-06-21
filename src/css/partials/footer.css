@@ -1,8 +1,7 @@
-/* --------------------------------------------------
- * 4.8. Park Footer
- * -------------------------------------------------- */
+/* footer styles */
+
 .park-footer {
-    background-image: url("../images/footer_topo_pattern.png");
+    background-image: url("../images/topo_pattern.png");
     padding: 1.5rem;
 }
 

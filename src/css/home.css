@@ -1,19 +1,16 @@
-/* --------------------------------------------------
- * 4.5. Intro Section
- * -------------------------------------------------- */
+/* Intro and info sections */
+
 .intro {
     padding: 1em;
 }
 
-.intro>h1 {
+.intro>h1,
+main>h1 {
     font-family: var(--bs-font-serif);
     font-size: 2em;
     font-weight: normal;
 }
 
-/* --------------------------------------------------
- * 4.6. Info Section
- * -------------------------------------------------- */
 .info {
     display: flex;
     flex-direction: column;

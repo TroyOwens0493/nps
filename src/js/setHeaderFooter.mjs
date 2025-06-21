@@ -1,15 +1,14 @@
 import { parkInfoTemplate, footerTemplate } from "./templates.mjs";
+import enableNavigation from "./navigation.mjs";
 
-const setHeaderInfo = (data) => {
-    const heroBanner = document.querySelector('.hero-banner__title');
-    heroBanner.innerHTML = parkInfoTemplate(data);
-
-    const title = document.querySelector('head > title');
-    title.innerHTML = data.fullName;
-
-    const heroImageElement = document.querySelector('.hero-banner > img');
-    const heroImageUrl = data.images[0].url;
-    heroImageElement.src = heroImageUrl;
+function setHeaderInfo(data) {
+    const disclaimer = document.querySelector(".disclaimer > a");
+    disclaimer.href = data.url;
+    disclaimer.innerHTML = data.fullName;
+    document.querySelector("head > title").textContent = data.fullName;
+    document.querySelector(".hero-banner > img").src = data.images[0].url;
+    document.querySelector(".hero-banner__content").innerHTML =
+        parkInfoTemplate(data);
 }
 
 function setFooter(data) {
@@ -17,9 +16,8 @@ function setFooter(data) {
     footerEl.insertAdjacentHTML("afterbegin", footerTemplate(data));
 }
 
-const setHeaderFooter = (data) => {
-    setFooter(data);
-    setHeaderInfo(data);
+export default function setHeaderFooter(parkData) {
+    setHeaderInfo(parkData);
+    setFooter(parkData);
+    enableNavigation();
 }
-
-export default setHeaderFooter;
