@@ -1,3 +1,4 @@
+/* This file configures Vite, the build tool used for this project. It defines the project root, build output directory, and entry points for different HTML pages. */
 import { dirname, resolve } from "path";
 import { defineConfig } from "vite";
 import { fileURLToPath } from "url";

@@ -1,3 +1,4 @@
+/* This README file provides an overview of the project, including its description, prerequisites, setup instructions, and available commands. */
 # WDD 231 personal project
 
 ## Description

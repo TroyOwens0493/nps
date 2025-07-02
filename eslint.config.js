@@ -1,3 +1,4 @@
+/* This file configures ESLint for the project, defining linting rules and global variables. */
 import globals from "globals";
 import pluginJs from "@eslint/js";
 

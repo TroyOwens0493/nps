@@ -1,3 +1,4 @@
+/* This file imports all other CSS partials to create a single stylesheet. */
 @import "partials/variables.css";
 @import "partials/global.css";
 @import "partials/header.css";
